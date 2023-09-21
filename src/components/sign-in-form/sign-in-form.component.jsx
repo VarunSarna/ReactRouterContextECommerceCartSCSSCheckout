@@ -1,6 +1,5 @@
 import { useState } from "react";
 import {
-  createUserDocumentFromAuth,
   signInWithGooglePopup,
   signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
@@ -33,6 +32,7 @@ const SignInForm = () => {
         email,
         password
       );
+      console.log("user", user);
       resetFormFields();
     } catch (error) {
       switch (error.code) {

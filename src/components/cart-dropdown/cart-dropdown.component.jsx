@@ -5,7 +5,7 @@ import {
 } from "./cart-dropdown.styles";
 import Button from "../button/button.component";
 import CardItem from "../cart-item/cart-item.component";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../contexts/cart.context";
 

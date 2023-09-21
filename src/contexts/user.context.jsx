@@ -22,7 +22,7 @@ export const UserProvider = ({ children }) => {
       }
       setCurrentUser(user);
     });
-    console.log("working");
+    // console.log("working");
     return unsubscribe;
   }, []);
 
